@@ -12,6 +12,7 @@ all: lib
 
 
 clean:
+	$(MAKE) -C ad_ip_jesd204_tpl_adc clean
 	$(MAKE) -C altera/adi_jesd204 clean
 	$(MAKE) -C altera/avl_adxcfg clean
 	$(MAKE) -C altera/avl_adxcvr clean
@@ -118,6 +119,7 @@ clean-all:clean
 
 
 lib:
+	$(MAKE) -C ad_ip_jesd204_tpl_adc
 	$(MAKE) -C altera/adi_jesd204
 	$(MAKE) -C altera/avl_adxcfg
 	$(MAKE) -C altera/avl_adxcvr
